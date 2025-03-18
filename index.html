@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-pic"></div>
+            <h2>Rakish Rawatan</h2>
+            <p>India</p>
+            <p>Work Experience</p>
+        </aside>
+        <main class="profile">
+            <section class="info-card">
+                <h3>Personal Information <button onclick="openModal()">Edit</button></h3>
+                <p><strong>Full Name:</strong> Rakish Rawatan</p>
+                <p><strong>Gender:</strong> Male</p>
+                <p><strong>Age:</strong> 28</p>
+                <p><strong>Address:</strong> 23/A, NH 76, Bangalore, India</p>
+            </section>
+            <section class="edit-profile">
+                <h3>Edit Profile</h3>
+                <form>
+                    <label>Bio</label>
+                    <textarea rows="4">Passionate about Web Development and UI/UX.</textarea>
+                    <label>Preferred Language</label>
+                    <select>
+                        <option>English</option>
+                        <option>Hindi</option>
+                    </select>
+                    <label>Interests</label>
+                    <input type="text" value="Web Development, Programming Languages, Leadership">
+                    <label>Social Media Links</label>
+                    <input type="url" placeholder="LinkedIn URL">
+                    <input type="url" placeholder="GitHub URL">
+                    <button type="submit">Save Changes</button>
+                </form>
+            </section>
+            <section class="education">
+                <h3>Education</h3>
+                <div class="info-card">
+                    <p><strong>Imperial College London</strong></p>
+                    <p>Bachelor's in Computer Science, 2020-2023</p>
+                    <button>Edit</button>
+                </div>
+                <div class="info-card">
+                    <p><strong>MIT University</strong></p>
+                    <p>Master's in Technology, 2023-Present</p>
+                    <button>Edit</button>
+                </div>
+            </section>
+            <section class="work-experience">
+                <h3>Work Experience</h3>
+                <div class="info-card">
+                    <p><strong>Software Engineer</strong> - ABC Tech</p>
+                    <p>2020-Present</p>
+                    <button>Edit</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Edit Personal Information</h3>
+            <form>
+                <label>Full Name</label>
+                <input type="text" value="Rakish Rawatan">
+                <label>Gender</label>
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+                <label>Age</label>
+                <input type="number" value="28">
+                <label>Address</label>
+                <input type="text" value="23/A, NH 76, Bangalore, India">
+                <label>City</label>
+                <input type="text" value="Bangalore">
+                <label>State</label>
+                <input type="text" value="Karnataka">
+                <label>Country</label>
+                <input type="text" value="India">
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+   
+    <script src="script.js"></script>
+   
+</body>
+</html>
